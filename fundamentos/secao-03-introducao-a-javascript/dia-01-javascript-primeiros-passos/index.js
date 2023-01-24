@@ -74,10 +74,20 @@ if(porcentagem >= 90){
    console.log('ERRO')
 }
 
-
 const num1 = 3;
 const num2 = 3;
 const num3 = 3;
+
+if(num1 % 2 == 0 || num2 % 2 == 0 || num3 % 2 == 0) {
+   console.log('true')
+} else {
+   console.log('false')
+}
+
+
+const num4 = 3;
+const num5 = 3;
+const num6 = 3;
 
 if(num1 % 2 == 1 || num2 % 2 == 1 || num3 % 2 == 1) {
    console.log('true')
@@ -86,9 +96,21 @@ if(num1 % 2 == 1 || num2 % 2 == 1 || num3 % 2 == 1) {
 }
 
 
-const nume1 = 1;
-const nume2 = 2;
+const custoDoProduto = 1;
+const valorDeVenda = 3;
 
+const produtosVendidos = 1000;
+const impostoDoProdutoTotal = 20 * custoDoProduto / 100 * produtosVendidos;
+
+const vendaTotal = produtosVendidos * valorDeVenda - impostoDoProdutoTotal;
+
+const lucroTotal = vendaTotal  - (custoDoProduto * produtosVendidos);
+
+if(valorDeVenda > 0 || valorDoProduto > 0) {
+   console.log(lucroTotal)
+} else {
+   console.log(erro)
+}
 
 
 
