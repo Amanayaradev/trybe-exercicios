@@ -112,37 +112,24 @@ if(valorDeVenda > 0 || valorDoProduto > 0) {
    console.log(erro)
 }
 
+const salario = 2000.00;
+let inss;
 
-
+if(salario <= 1556.94){
+   inss = salario * 0.8;
+   console.log(inss)
+} else if (salario <= 2594.92){
+   inss = salario * 0.9;
+   console.log(inss)
+} else if(salario <= 5189.82){
+   inss = salario * 0.11;
+   console.log(inss)
+} else {
+   inss = 570.88;
+}
 
 /*
-
 🚀 
-Utilize if/else para escrever um código que defina três números em constantes e 
-retorne true se pelo menos uma das três for ímpar. Caso contrário, ele deve retornar false.
-Bonus: use somente um if.
-Utilize if/else para escrever um código que se inicie com dois valores 
-em duas constantes diferentes: o custo de um produto e seu valor de venda.
- A partir dos valores, calcule quanto de lucro (valor de venda, descontado 
-   o custo do produto) a empresa terá ao vender mil desses produtos.
-Atente que, sobre o custo do produto, incide um imposto de 20%.
-
-Seu código também deve emitir uma mensagem de erro e encerrar caso 
-algum dos seus valores de entrada seja menor que zero.
-
-O lucro de um produto é o resultado da subtração do valor de venda 
-pelo custo do mesmo, sendo que o imposto de 20% também faz parte do valor de custo.
-
-valorCustoTotal = valorCusto + impostoSobreOCusto;
-lucro = valorVenda - valorCustoTotal (lucro de um produto);
-Utilize if/else para escrever um código que, dado um salário bruto, calcule o líquido a ser recebido.
-Uma pessoa que trabalha de carteira assinada no Brasil tem descontados de seu salário bruto o INSS e o IR.
-
-A notação para um salário de R$1500,10, por exemplo, 
-deve ser 1500.10. Para as faixas de impostos, use as seguintes referências:
-
-INSS (Instituto Nacional do Seguro Social)
-
 Salário bruto até R$ 1.556,94: alíquota de 8%
 
 Salário bruto de R$ 1.556,95 a R$ 2.594,92: alíquota de 9%
