@@ -113,21 +113,36 @@ if(valorDeVenda > 0 || valorDoProduto > 0) {
 }
 
 const salario = 2000.00;
+
 let inss;
 
 if(salario <= 1556.94){
-   inss = salario * 0.8;
-   console.log(inss)
+   inss = salario * 0.08;
 } else if (salario <= 2594.92){
-   inss = salario * 0.9;
-   console.log(inss)
+   inss = salario * 0.09;
 } else if(salario <= 5189.82){
    inss = salario * 0.11;
-   console.log(inss)
 } else {
    inss = 570.88;
 }
 
+const salariobruto = salario - inss;
+
+let impostoDeRenda;
+
+if(salariobruto <= 1903.93) {
+   impostoDeRenda = 0;
+} else if(salariobruto <= 2826.65) {
+   impostoDeRenda = salariobruto * 0.075 - 142.80;
+} else if(salariobruto <= 3751.05) {
+   impostoDeRenda = salariobruto * 0.15 - 354.80;
+} else if(salariobruto <= 4664.68) {
+   impostoDeRenda = salariobruto * 0.225 - 636.13;
+} else if(salariobruto > 4664.65) {
+   impostoDeRenda = salariobruto * 0.275 - 869.36;
+}
+
+console.log(salariobruto - impostoDeRenda)
 /*
 🚀 
 Salário bruto até R$ 1.556,94: alíquota de 8%
