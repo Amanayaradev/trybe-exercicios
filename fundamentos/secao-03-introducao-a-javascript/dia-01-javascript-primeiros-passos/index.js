@@ -79,34 +79,45 @@ const num1 = 3;
 const num2 = 3;
 const num3 = 3;
 
-if(num1 % 2 == 0 || num2 % 2 == 0 || num3 % 2 == 0) {
+if(num1 % 2 == 1 || num2 % 2 == 1 || num3 % 2 == 1) {
    console.log('true')
 } else {
    console.log('false')
 }
 
 
+const nume1 = 1;
+const nume2 = 2;
+
+
+
+
 
 /*
 
-🚀 Há um par entre nós
-Utilize if/else para escrever um código que defina três números em constantes e retorne true se pelo menos uma das três for par. Caso contrário, ele deve retornar false.
+🚀 
+Utilize if/else para escrever um código que defina três números em constantes e 
+retorne true se pelo menos uma das três for ímpar. Caso contrário, ele deve retornar false.
 Bonus: use somente um if.
-Utilize if/else para escrever um código que defina três números em constantes e retorne true se pelo menos uma das três for ímpar. Caso contrário, ele deve retornar false.
-Bonus: use somente um if.
-Utilize if/else para escrever um código que se inicie com dois valores em duas constantes diferentes: o custo de um produto e seu valor de venda. A partir dos valores, calcule quanto de lucro (valor de venda, descontado o custo do produto) a empresa terá ao vender mil desses produtos.
+Utilize if/else para escrever um código que se inicie com dois valores 
+em duas constantes diferentes: o custo de um produto e seu valor de venda.
+ A partir dos valores, calcule quanto de lucro (valor de venda, descontado 
+   o custo do produto) a empresa terá ao vender mil desses produtos.
 Atente que, sobre o custo do produto, incide um imposto de 20%.
 
-Seu código também deve emitir uma mensagem de erro e encerrar caso algum dos seus valores de entrada seja menor que zero.
+Seu código também deve emitir uma mensagem de erro e encerrar caso 
+algum dos seus valores de entrada seja menor que zero.
 
-O lucro de um produto é o resultado da subtração do valor de venda pelo custo do mesmo, sendo que o imposto de 20% também faz parte do valor de custo.
+O lucro de um produto é o resultado da subtração do valor de venda 
+pelo custo do mesmo, sendo que o imposto de 20% também faz parte do valor de custo.
 
 valorCustoTotal = valorCusto + impostoSobreOCusto;
 lucro = valorVenda - valorCustoTotal (lucro de um produto);
 Utilize if/else para escrever um código que, dado um salário bruto, calcule o líquido a ser recebido.
 Uma pessoa que trabalha de carteira assinada no Brasil tem descontados de seu salário bruto o INSS e o IR.
 
-A notação para um salário de R$1500,10, por exemplo, deve ser 1500.10. Para as faixas de impostos, use as seguintes referências:
+A notação para um salário de R$1500,10, por exemplo, 
+deve ser 1500.10. Para as faixas de impostos, use as seguintes referências:
 
 INSS (Instituto Nacional do Seguro Social)
 
