@@ -56,19 +56,25 @@ switch (peçaDeXadrezLower) {
       console.log('erro')
 }
 
+const porcentagem = 90;
 
-
+if(porcentagem >= 90){
+   console.log('A');
+} else if(porcentagem >= 80){
+   console.log('B');
+} else if(porcentagem >= 70){
+   console.log('C')
+} else if(porcentagem >= 60){
+   console.log('D')
+} else if(porcentagem >= 50){
+   console.log('E')
+} else if(porcentagem < 50){
+   console.log('F')
+} else if(porcentagem < 0 || porcentagem > 100){
+   console.log('ERRO')
+}
 
 /*
-Utilize switch/case para escrever um código que receba o nome de uma peça de xadrez e retorne os movimentos que ela faz.
-Como desafio, escreva um código para funcionar tanto se receber o nome de uma peça com letras maiúsculas quanto com letras minúsculas, sem aumentar a quantidade de condicionais.
-
-Como dica, você pode pesquisar uma função que faz uma string ficar com todas as letras minúsculas (lower case).
-
-Se a peça passada for inválida, o código deve retornar uma mensagem de erro.
-
-Exemplo: bishop (bispo) -> diagonals (diagonais)
-
 Utilize if/else para escrever um código que converta uma nota dada em porcentagem (de 0 a 100) em conceitos de A a F. Siga essas regras:
 Porcentagem >= 90 -> A
 
