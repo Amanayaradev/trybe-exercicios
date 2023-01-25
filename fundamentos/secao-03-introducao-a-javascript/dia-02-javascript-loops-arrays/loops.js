@@ -49,15 +49,21 @@
                 // }
                 
                 
-let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
-let impares = [];
-for(let index = 0; index < numbers.length; index += 1) {
-    if(numbers[index] % 2 === 1) {
-        impares.push(numbers[index]);
-    }
+// let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
+// let impares = [];
+// for(let index = 0; index < numbers.length; index += 1) {
+//     if(numbers[index] % 2 === 1) {
+//         impares.push(numbers[index]);
+//     }
+// }
+// if(impares % 2 === 0) {
+//     console.log("nenhum valor ímpar encontrado")
+// } else {
+//     console.log(impares)
+// }
+
+let soma = 0;
+for(let index = 0; index < 100; index += 1) {
+    soma += index;
 }
-if(impares % 2 === 0) {
-    console.log("nenhum valor ímpar encontrado")
-} else {
-    console.log(impares)
-}
+console.log(soma)
