@@ -29,13 +29,20 @@
 // }
 // console.log(maiorNumero)
 
-let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
+// let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
 
-let menorNumero = numbers[9];
+// let menorNumero = numbers[9];
                 
-for(let index = 1; index < numbers.length; index += 1) {
-    if(menorNumero > numbers[index]) {
-        menorNumero = numbers[index]
-    }
+// for(let index = 1; index < numbers.length; index += 1) {
+//     if(menorNumero > numbers[index]) {
+//         menorNumero = numbers[index]
+//     }
+// }
+// console.log(menorNumero)
+
+let arrayDeNumeros = [];
+
+for(let index = 1; index < 26; index += 1) {
+    arrayDeNumeros.push(index);
 }
-console.log(menorNumero)
+console.log(arrayDeNumeros)
