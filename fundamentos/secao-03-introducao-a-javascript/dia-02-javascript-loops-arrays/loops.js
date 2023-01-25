@@ -41,8 +41,10 @@
 // console.log(menorNumero)
 
 let arrayDeNumeros = [];
-
 for(let index = 1; index < 26; index += 1) {
     arrayDeNumeros.push(index);
 }
-console.log(arrayDeNumeros)
+
+for(let divisao = 0; divisao < arrayDeNumeros.length; divisao += 1) {
+    console.log(arrayDeNumeros[divisao] / 2)
+}
