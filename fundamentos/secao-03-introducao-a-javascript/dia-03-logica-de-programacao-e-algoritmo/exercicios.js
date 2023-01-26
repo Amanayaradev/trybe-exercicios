@@ -29,10 +29,32 @@
 // }
 // console.log(stringInvertida);
 
-let inverter = 'tryber';
-let inversao = '';
-for(let index = inverter.length - 1; index >= 0; index -= 1) {
-    inversao += inverter[index];
+// let inverter = 'tryber';
+// let inversao = '';
+// for(let index = inverter.length - 1; index >= 0; index -= 1) {
+//     inversao += inverter[index];
+// }
+// console.log(inversao)
+
+// Utilize a estrutura de repetição for para escrever dois algoritmos:
+//  um que imprima no console a maior palavra desse array e 
+// outro que imprima a menor. Considere o número de caracteres de cada palavra.
+// if(array[index] > array[index].length) {
+//     console.log(array[index])
+// }
+let array = ['java', 'javascript', 'python', 'html', 'css'];
+let maior = array[0];
+let menor = array[0]
+for(let index = 0; index < array.length; index += 1) {
+    if(array[index].length > maior.length) {
+        maior = array[index];
+    }
 }
-console.log(inversao)
+for(let index02 = 0; index02 < array.length; index02 += 1) {
+    if(array[index02].length < menor.length) {
+        menor = array[index02];
+    }
+}
+console.log(maior)
+console.log(menor)
 
