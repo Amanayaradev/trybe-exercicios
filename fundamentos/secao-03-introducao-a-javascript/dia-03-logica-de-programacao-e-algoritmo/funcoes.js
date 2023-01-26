@@ -34,15 +34,26 @@
 // }
 // console.log(maiorNumero(2, 1));
 
-function maiorNumero(n1, n2, n3) {
-    if(n1 > n2 && n1 > n3) {
-        return n1;
-    } else if (n2 > n1 && n2 > n3) {
-        return n2;
-    } else if(n3 > n2 & n3 > n1) {
-        return n3;
+// function maiorNumero(n1, n2, n3) {
+//     if(n1 > n2 && n1 > n3) {
+//         return n1;
+//     } else if (n2 > n1 && n2 > n3) {
+//         return n2;
+//     } else if(n3 > n2 & n3 > n1) {
+//         return n3;
+//     } else {
+//         return 'são numeros iguais';
+//     }
+// }
+// console.log(maiorNumero(4, 4, 4));
+
+function positiveNegative(n) {
+    if(n > 0) {
+        return 'positive';
+    } else if (n < 0) {
+        return 'negative';
     } else {
-        return 'são numeros iguais';
+        return "zero"
     }
 }
-console.log(maiorNumero(4, 4, 4));
+console.log(positiveNegative(0))
