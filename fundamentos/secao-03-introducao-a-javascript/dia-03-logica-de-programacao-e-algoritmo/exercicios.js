@@ -42,19 +42,21 @@
 // if(array[index] > array[index].length) {
 //     console.log(array[index])
 // }
-let array = ['java', 'javascript', 'python', 'html', 'css'];
-let maior = array[0];
-let menor = array[0]
-for(let index = 0; index < array.length; index += 1) {
-    if(array[index].length > maior.length) {
-        maior = array[index];
-    }
-}
-for(let index02 = 0; index02 < array.length; index02 += 1) {
-    if(array[index02].length < menor.length) {
-        menor = array[index02];
-    }
-}
-console.log(maior)
-console.log(menor)
+// let array = ['java', 'javascript', 'python', 'html', 'css'];
+// let maior = array[0];
+// let menor = array[0]
+// for(let index = 0; index < array.length; index += 1) {
+//     if(array[index].length > maior.length) {
+//         maior = array[index];
+//     }
+// }
+// for(let index02 = 0; index02 < array.length; index02 += 1) {
+//     if(array[index02].length < menor.length) {
+//         menor = array[index02];
+//     }
+// }
+// console.log(maior)
+// console.log(menor)
+
+
 
