@@ -47,13 +47,25 @@
 // }
 // console.log(maiorNumero(4, 4, 4));
 
-function positiveNegative(n) {
-    if(n > 0) {
-        return 'positive';
-    } else if (n < 0) {
-        return 'negative';
-    } else {
-        return "zero"
+// function positiveNegative(n) {
+//     if(n > 0) {
+//         return 'positive';
+//     } else if (n < 0) {
+//         return 'negative';
+//     } else {
+//         return "zero"
+//     }
+// }
+// console.log(positiveNegative(0))
+
+
+function trianguloInterno(a, b, c) {
+    if(a + b + c === 180){
+        return 'true';
+    } else if (a + b + c !== 180) {
+        return 'false';
+    } else{
+        return "ERRO!!!!"
     }
 }
-console.log(positiveNegative(0))
+console.log(trianguloInterno(-1, -2, -3));
