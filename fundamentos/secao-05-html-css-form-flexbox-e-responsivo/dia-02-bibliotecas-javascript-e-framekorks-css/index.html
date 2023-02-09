@@ -7,11 +7,52 @@
     <title>Document</title>
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="script.js" defer></script>
 </head>
 <body>
-    <header>
-        <h1>alguma coisa</h1>
-    </header>
+    <h1 class="display-6 text-muted" id="title">Formulário Trybe Travel</h1>
+    <form id="main-form" action="" method="get">
+        <div class="form-group">
+            <label for="algo">Nome Coompleto</label>
+            <input class="form-control" id="fullName" type="name" name="nome">
+        </div>
+      <br>
+        <div class="form-group">
+            <label for="algo">Email</label>
+            <input class="form-control" id="email" type="email" name="email">
+        </div>
+      <br>
+        <div class="form-group">
+            <p>Destino Preferido</p>
+            <input type="radio" name="destinations">Cidade
+            <input type="radio" name="destinations">Montanhas
+            <input type="radio" name="destinations">Campo
+            <input type="radio" name="destinations">Praia
+        </div>
+      <br>
+        <div class="form-group">
+            <label for="algo">what?</label>
+            <textarea class="form-control" name="" id="question" cols="20" rows="10"></textarea>
+        </div>
+      <br>
+      <div class="form-group">
+          <label for="algo">Date</label>
+          <input class="form-control" id="date" type="date" name="date">
+        </div>
+        <div class="form-group">
+            <label for="algo">promoção</label>
+            <input class="form-control" id="promo" type="text" name="">
+        </div>
+        <div class="form-group">
+            <label for="algo">agree</label>
+            <input id="agreement" type="name">
+        </div>
+  
+      <button class="btn btn-success" type="submit" id="submit-btn">Enviar</button>
+      <button class="btn btn-success" type="reset" id="clear-btn">Limpar</button>
+    </form>
+    <p class="ondeDeveFicar"></p>
+  
     
 </body>
 </html>
