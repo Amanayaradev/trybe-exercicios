@@ -62,4 +62,16 @@ const verifyPair = (obj, key, value) => {
   }
   return isEqual;
 };
-console.log(verifyPair(lesson2,'professor','Carlos'));
+verifyPair(lesson2,'professor','Carlos');
+
+const somaEstudantesDeMatematica = (obo) => {
+  let total = 0;
+  const objArray = Object.values(obo);
+  for(i in objArray){
+    if(objArray[i].materia === 'Matemática'){
+      total += objArray[i].numeroEstudantes;
+    }
+  }
+  return total;
+}
+somaEstudantesDeMatematica(allLessons);
