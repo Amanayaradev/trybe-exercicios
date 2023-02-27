@@ -79,3 +79,16 @@ describe('Testa a função hydrate', () => {
     expect(hydrate('4 caipirinhas e 2 cervejas')).toBe('6 copos de água');
   });
 });
+
+const skills = ['HTML', 'CSS', 'JavaScript'];
+
+const addNewSkill = (newSkill) => {
+  skills.push(newSkill);
+}
+
+test('Adiciona Jest na lista de habilidades', () => {  
+  const previousLength = skills.length;
+  addNewSkill('Jest');
+  expect(skills).toContain('Jest');
+  expect(skills).toHaveLength(previousLength + 1);
+});
