@@ -15,4 +15,5 @@ const createItem = (name, unit, price, quantity) => {
       price: price,
     };
   }
+  console.log(createItem('amana', 1, 2, 6))
   module.exports = createItem;
