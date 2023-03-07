@@ -38,41 +38,69 @@
 //   console.log(personLikes(alex)); // 'Alex is 26 years old and likes fly fishing.'
 //   console.log(personLikes(gunnar)); // 'Gunnar is 30 years old and likes hiking, scuba diving, taking pictures.'
 
-const people = [
+// const people = [
+//     {
+//       name: 'Nicole',
+//       bornIn: 1992,
+//       nationality: 'Australian',
+//     },
+//     {
+//       name: 'Harry',
+//       bornIn: 2008,
+//       nationality: 'Australian',
+//     },
+//     {
+//       name: 'Toby',
+//       bornIn: 1901,
+//       nationality: 'Australian',
+//     },
+//     {
+//       name: 'Frida',
+//       bornIn: 1960,
+//       nationality: 'Dannish',
+//     },
+//     {
+//       name: 'Fernando',
+//       bornIn: 2001,
+//       nationality: 'Brazilian',
+//     },
+//     // bornIn: nascido em
+//   ];
+  
+//   // escreva filterPeople abaixo
+//   //...
+
+// const filterPeople = (arr) => {
+//     return people.filter(({ nationality, bornIn }) => {
+//       return nationality === 'Australian' && bornIn > 1900 & bornIn <= 2000;
+//     });
+//   }
+//   console.log(filterPeople(people))
+
+const ships = [
     {
-      name: 'Nicole',
-      bornIn: 1992,
-      nationality: 'Australian',
+      name: 'Titanic',
+      length: 269.1,
+      measurementUnit: 'meters',
     },
     {
-      name: 'Harry',
-      bornIn: 2008,
-      nationality: 'Australian',
+      name: 'Queen Mary 2',
+      length: 1132,
+      measurementUnit: 'feet',
     },
     {
-      name: 'Toby',
-      bornIn: 1901,
-      nationality: 'Australian',
+      name: 'Yamato',
+      length: 256,
+      measurementUnit: 'meters',
     },
-    {
-      name: 'Frida',
-      bornIn: 1960,
-      nationality: 'Dannish',
-    },
-    {
-      name: 'Fernando',
-      bornIn: 2001,
-      nationality: 'Brazilian',
-    },
-    // bornIn: nascido em
+    // measurementUnit: unidade de medida
   ];
   
-  // escreva filterPeople abaixo
-  //...
-
-const filterPeople = (arr) => {
-    return people.filter(({ nationality, bornIn }) => {
-      return nationality === 'Australian' && bornIn > 1900 & bornIn <= 2000;
-    });
+  const shipLength = ({name, length, measurementUnit}) => {
+    return `${name} is ${length} ${measurementUnit} meters long`
   }
-  console.log(filterPeople(people))
+  
+  // retorno esperado
+  console.log(shipLength(ships[0])); // 'Titanic is 269.1 meters long'
+  console.log(shipLength(ships[1])); // 'Queen Mary 2 is 1132 feet long'
+  console.log(shipLength(ships[2])); // 'Yamato is 256 meters long'
